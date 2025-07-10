@@ -154,7 +154,7 @@ float lireTemperature() {
 
 int lireHumidite() {
   int val = analogRead(pinHumidite);
-  return map(val, 1023, 0, 0, 100);
+  return map(val, 1023, 0, 100, 0);
 }
 
 int lireDistance() {

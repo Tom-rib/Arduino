@@ -29,7 +29,7 @@ void loop() {
   float temperature = (tension - 0.5) * 100.0;
 
   int humiditeBrute = analogRead(pinHumidite);
-  int humiditePourcent = map(humiditeBrute, 1023, 0, 0, 100);
+  int humiditePourcent = map(humiditeBrute, 1023, 0, 100, 0);
 
   // LED RGB selon température
   if (temperature < 18) {
