@@ -19,7 +19,7 @@ const unsigned long interval = 1000;  // 1 seconde
 void setup() {
   lcd_1.begin(16, 2);
   lcd_1.setCursor(0, 0);
-  lcd_1.print("Nom du Groupe");  // Remplace par le nom de ton groupe
+  lcd_1.print("Nom du Groupe");  
 
   pinMode(buttonPin, INPUT_PULLUP);
 }
@@ -47,7 +47,7 @@ void loop() {
   lcd_1.setCursor(0, 1);
   // print the number of seconds since reset:
   lcd_1.print(seconds);
-  delay(1000); // Wait for 1000 millisecond(s)
+  delay(1000); 
   seconds += 1;
       
       }
